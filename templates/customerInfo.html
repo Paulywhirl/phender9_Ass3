@@ -1,0 +1,45 @@
+Hello {{data[0][1]}} {{data[0][2]}}
+<br>
+<br>
+Profile
+<table>
+{% for row in data %}
+   <tr>
+        {% for cell in row %}
+        <td> {{ cell }} </td>
+        {% endfor %}
+   </tr>
+{% endfor %}
+</table>
+<br>
+Viewed Movies
+<table>
+{% for row in movies %}
+   <tr>
+        {% for cell in row %}
+        <td> {{ cell }} </td>
+        {% endfor %}
+        <td> 
+        <form action="/customerUpdateRating" method="post">
+            <input type="hidden" name="idShowing" value={{row[2]}}>
+            Set New Rating: 
+            <select name="value">
+            {% for n in range(1,6) %}
+                <option value={{n}}>{{n}}</option>
+            {% endfor %}
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    
+    </td>
+   </tr>
+{% endfor %}
+</table>
+
+
+#Search for Showing
+
+#Attend Showing
+
+
+

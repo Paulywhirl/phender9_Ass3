@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whirl Movies</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css' ) }}" rel="stylesheet">
+    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico' ) }}"> -->
+    <style>
+        h1{
+            font-size: 200%;
+            height: 250px;;
+            width: auto;
+            background-color: #23527c;
+            text-align: center;
+        }
+
+        div{
+            height: 250px;;
+            width: auto;
+            background-color: #23527c;
+            text-align: center;
+
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+         }
+        .button1{
+
+            background-color: white;
+            width: 49%;
+            color: black;
+            border: 2px solid red;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .button1:hover{
+            background-color: blue;
+            color: white;
+        }
+        .button2{
+            background-color: white;
+            width: 49%;
+            color: black;
+            border: 2px solid blue;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .button2:hover{
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div_head><h1>The Movie Place For Movies</h1></div_head>
+    <table>
+        <tr>
+            <td></td>
+            <td><b>Welcome to the movie website about movies</b>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+    <div class="container-fluid">
+        <div class="row">
+          <img src="/static/Poster/SW_ESB.jpg" class="140x140" alt="Responsive image" height="250" width="165">
+          <img src="/static/Poster/pulpfiction.jpg" class="140x140" alt="Responsive image" height="250" width="165">
+          <img src="/static/Poster/Tommy-Boy.jpg" class="140x140" alt="Responsive image" height="250" width="165">
+        </div>
+    </div>
+
+    <a href="/Customer"><button class="button button1" type="submit">are you a Customer?</button></a>
+    <a href="/Employee"><button class="button button2" type="submit">are you an Employee?</button></a>
+</body>
+</html>

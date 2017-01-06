@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendances</title>
+</head>
+<body>
+    <h1>Here are the attendances for customer who paid for Showings</h1>
+
+<div>
+{% for attendance in attendances %}
+    <span>{{ attendance.0 }}  {{ attendance.1 }} {{ attendance.2 }} {{ attendance.3 }} {{ attendance.4 }}</span><br />
+{% endfor %}
+</div>
+
+<br><br>
+<img src="/static/Poster/Tommy-Boy.jpg" class="140x140" alt="Responsive image" height="250" width="165">
+</body>
+</html>

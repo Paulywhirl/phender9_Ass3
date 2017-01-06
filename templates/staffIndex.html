@@ -1,0 +1,5 @@
+<t3>Welcome to the Staff Page</t3> <br>
+<br>
+{% for row in data %}
+    <a href="/show{{row[0]}}" class="btn btn-outline btn-xl page-scroll">{{row[0]}}</a><br>
+{% endfor %}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <style>
+        body{
+            background-color: #2b669a;
+        }
+        div.wrapper {
+            position:  absolute;
+            top : 200px;
+            left: 300px;
+            width: 300px;
+            height:300px;
+            border:1px solid black;
+            background-color: #5e5e5e;
+            box-shadow: ghostwhite;
+
+        }
+
+        input[type="text"] {
+             position: relative;
+             display: block;
+             margin : 0 auto;
+        }
+        text{
+            color: white;
+        }
+        button{
+            position: relative;
+            align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <text><p> Hello, who are you?</p></text>
+        <br>
+         <form action="/customerPage" method="post">
+            <text>ID Number:</text><br>
+            <input type="text" name="CID" value="ID"><br>
+            <input type="submit" value="Go to Movies!">
+        </form>
+
+        <br>
+
+        <text>*Please enter your Customer Credentials :)</text>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{{type}}
+<table>
+{% for row in data %}
+   <tr>
+        {% for cell in row %}
+        <td> {{ cell }} </td>
+        {% endfor %}
+   </tr>
+{% endfor %}
+</table>
+<br>
+<br>
+<a href="/staff" class="btn btn-outline btn-xl page-scroll">Return back to Staff Page</a>

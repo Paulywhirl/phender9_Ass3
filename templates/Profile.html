@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+<h1>Your Information</h1>
+<div>
+{% for you in yous %}
+    <span>Customer ID = {{ you.0 }}</span><br>
+    <span>First Name = {{ you.1 }}</span><br>
+    <span>Last Name = {{ you.2 }}</span><br>
+    <span>Email Address = {{ you.3 }}</span><br>
+    <span>Sex = {{ you.4 }}</span>
+{% endfor %}
+</div>
+
+<br><br><a href="/customerPage">Go back</a><br>
+</body>
+</html>

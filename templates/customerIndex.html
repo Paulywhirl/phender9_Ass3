@@ -1,0 +1,24 @@
+
+<div>
+{% for user in users %}
+    <span>{{ user.0 }}  {{ user.1 }} {{ user.2 }} {{ user.3 }} {{ user.4 }}</span><br>
+{% endfor %}
+</div>
+
+
+<table>
+{% for row in data %}
+   <tr>
+        {% for cell in row %}
+        <td> {{ cell }} </td>
+        {% endfor %}
+        <td>
+            <a href="/customerInfo?id={{row[0]}}" class="btn btn-outline btn-xl page-scroll">Select</a><br>
+        </td>
+   </tr>
+{% endfor %}
+</table>
+
+
+<a href="/Employee">Go back</a><br>
+<a href="/">Go home</a>

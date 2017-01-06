@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Menu</title>
+</head>
+<body>
+    <div>
+        {% for name in names %}
+        <h1>Welcome {{ name.0 }} {{ name.1 }}! What will you do today?</h1><br>
+        {% endfor %}
+    </div>
+
+    <h2><a href="/COTS"> Check out the Showings!</a></h2>
+
+    <h2><a href="/attendy">Attend a Showing</a></h2>
+
+    <h2><a href="/rate">Come Rate a Showing</a></h2>
+
+    <h2><a href="/showFirst">Check your history with us!</a></h2>
+
+    <h2><a href="/custProfile">Your Profile</a></h2>
+
+
+<br><br><a href="/">Go back</a><br>
+</body>
+</html>

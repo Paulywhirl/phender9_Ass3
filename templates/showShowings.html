@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Showings</title>
+</head>
+<body>
+    <h1>These are all the Shows you went to!</h1>
+
+<div>
+{% for stuff in stuffs %}
+    <span>{{ stuff.0 }}  {{ stuff.1 }} {{ stuff.2 }}</span><br>
+{% endfor %}
+</div>
+
+<br><br><a href="/customerPage">Go back</a><br>
+
+</body>
+</html>

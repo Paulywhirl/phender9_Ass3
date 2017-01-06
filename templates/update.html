@@ -1,0 +1,13 @@
+Update {{name}}
+<form action={{command}} method="post">
+    Attribute:
+    <select name="attribute">
+        {% for row in data %}
+            <option value={{row[0]}}>{{row[0]}}</option>
+        {% endfor %}
+    </select>
+    new value is: 
+    <input type="text" name="value" value=""> 
+    <input type="hidden" name="id{{name}}" value={{key}}>
+    <input type="submit" value="Submit">
+ </form>
